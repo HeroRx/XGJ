@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/registration_background">
+    <RelativeLayout
+        android:id="@+id/registra_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@mipmap/user_hint" >
+
+        <ImageView
+            android:id="@+id/registra_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/registra_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registra_rl_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/registra_rl_title">
+        <ImageView
+            android:id="@+id/registra_img_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_user"/>
+        <EditText
+            android:id="@+id/registra_et_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/registra_img_user"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="请输入用户名"
+            android:textColorHint="#fffffbfb"
+            android:background="@mipmap/user_hint"/>
+
+
+        <ImageView
+            android:id="@+id/registra_img_separate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registra_img_user"
+            android:src="@mipmap/registra_separate"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registra_rl_phonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/registra_rl_user">
+        <ImageView
+            android:id="@+id/registra_img_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/registra_phonenum"/>
+        <EditText
+            android:id="@+id/registra_et_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numeric="integer"
+            android:maxLength="11"
+            android:layout_toRightOf="@id/registra_img_phonenum"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="请输入手机号码"
+            android:textColorHint="#fffffbfb"
+            android:background="@mipmap/user_hint"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registra_img_phonenum"
+            android:src="@mipmap/registra_separate"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/registra_rl_inputpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/registra_rl_phonenum">
+        <ImageView
+            android:id="@+id/registra_img_inputpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/registration_inputpassword"/>
+        <EditText
+            android:id="@+id/registra_et_inputpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:layout_toRightOf="@id/registra_img_inputpassword"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="请输入密码"
+            android:textColorHint="#fffffbfb"
+            android:background="@mipmap/user_hint"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registra_img_inputpassword"
+            android:src="@mipmap/registra_separate"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registra_rl_confirmpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/registra_rl_inputpassword">
+        <ImageView
+            android:id="@+id/registra_img_confirmpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/registration_confirm_password"/>
+        <EditText
+            android:id="@+id/registra_et_confirmpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:layout_toRightOf="@id/registra_img_confirmpassword"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="请确认密码"
+            android:textColorHint="#fffffbfb"
+            android:background="@mipmap/user_hint"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registra_img_confirmpassword"
+            android:src="@mipmap/registra_separate"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registra_rl_verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/registra_rl_confirmpassword">
+
+        <EditText
+            android:id="@+id/registra_et_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numeric="integer"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="请输入验证码"
+            android:textColorHint="#fffffbfb"
+            android:background="@mipmap/user_hint"/>
+        <Button
+            android:id="@+id/registra_btn_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/registra_et_verification_code"
+            android:background="@mipmap/registra_getcode"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registra_btn_getcode"
+            android:layout_alignLeft="@id/registra_et_verification_code"
+            android:src="@mipmap/registra_code_separate"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registra_btn_registra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/registra_btn"
+        android:layout_below="@id/registra_rl_verification_code"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

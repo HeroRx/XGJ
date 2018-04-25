@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#0e8bf0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/diagram" />
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <include layout="@layout/search"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="广州"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_down3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--广告 -->
+    <fragment
+        android:id="@+id/fragment_cycle_viewpager_content"
+        android:name="com.gzucm.xgj.lib.CycleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        tools:layout="@layout/view_cycle_viewpager_contet"
+        android:layout_below="@+id/rl_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/fragment_main_content"
+        android:layout_below="@+id/fragment_cycle_viewpager_content"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ecf0f1">
+            <RelativeLayout
+                android:id="@+id/rl_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/img_sign" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sign"/>
+                <TextView 
+                    android:id="@+id/tv_sign"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/img_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_appoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/img_appoint" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/appoint"/>
+                <TextView 
+                    android:id="@+id/tv_appoint"
+                    android:layout_below="@id/img_appoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="预约"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/img_study" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/study"/>
+                <TextView 
+                    android:id="@+id/tv_study"
+                    android:layout_below="@id/img_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="理论学习"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_forum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/img_forum" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/forum"/>
+                <TextView 
+                    android:id="@+id/tv_forum"
+                    android:layout_below="@id/img_forum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="论坛"/>
+            </RelativeLayout>
+
+    </LinearLayout>
+    <!--四个按钮下面的布局 -->
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/lv_tuijian"
+        android:gravity="center"
+        android:layout_below="@+id/fragment_main_content"
+        android:background="#4282d3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="驾校资讯"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/sch_info_lv"
+                android:divider="@color/gray"
+                android:dividerHeight="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+            </ListView>
+
+
+
+</LinearLayout>

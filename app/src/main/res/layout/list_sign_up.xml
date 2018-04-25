@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/root_bg_color"
+    android:paddingTop="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/sign_up_list">
+
+    <ImageView
+        android:id="@+id/image_sch"
+        android:src="@mipmap/yongan"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/lv"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="永安通驾校"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_location"
+            android:paddingTop="12dp"
+            android:text="所在区域：白云区"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:paddingBottom="20dp"
+            android:text="咨询电话：4008-278-511"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+

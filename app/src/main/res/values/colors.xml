@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="entry_login">#0e8bf0</color>
+    <color name="blue">#0e8bf0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#dedcdc</color>
+    <!-- 灰色 -->
+    <color name="main_gray">#cfcaca</color>
+    <!-- 根布局的背景 -->
+    <color name="root_bg_color">#efeded</color>
+    <color name="color_03">#03a9f4</color>
+    <color name="color_19">#1962c2</color>
+    <color name="color_e3">#e3e3e3</color>
+    <color name="color_88">#88a9f4</color>
+    <color name="color_82">#828282</color>
+    <color name="color_04">#049be0</color>
+    <color name="color_01">#01354d</color>
+    <color name="color_00">#000000</color>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_appoint_top_bar"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/color_19">
+
+
+        <ImageView
+            android:layout_weight="2"
+            android:id="@+id/img_qianday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_qianday" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img_back"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_lefterror"
+                android:layout_toLeftOf="@+id/tv_time"
+                />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:text=" 2015-10-10 "/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_righterror"
+                android:layout_toLeftOf="@+id/tv_time"
+                />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_houday"
+            android:scaleType="fitXY"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <include layout="@layout/include_no_data"/>
+
+        <ListView
+            android:id="@+id/lv_appoint"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/gray"
+            android:dividerHeight="2dp"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <include layout="@layout/include_progress"/>
+
+
+    <include layout="@layout/activity_appoint_bottom_bar" />
+
+</LinearLayout>

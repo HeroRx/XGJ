@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background">
+
+    <ImageView
+        android:id="@+id/login_user_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/login_rl_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/login_user_icon">
+        <ImageView
+            android:id="@+id/login_img_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_user"/>
+        <EditText
+            android:id="@+id/login_et_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/login_img_user"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="用户名/手机号"
+            android:textColorHint="#fffffbfb"
+            android:background="@mipmap/user_hint"/>
+
+
+        <ImageView
+            android:id="@+id/login_img_separate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_img_user"
+            android:src="@mipmap/img_separate"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_rl_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/login_rl_user">
+        <ImageView
+            android:id="@+id/login_img_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/img_password"/>
+        <EditText
+            android:id="@+id/login_et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:layout_toRightOf="@id/login_img_password"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:hint="请输入密码"
+            android:textColorHint="@color/gray"
+            android:background="@mipmap/user_hint"/>
+
+
+        <ImageView
+            android:id="@+id/login_img_separate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_img_password"
+            android:src="@mipmap/img_separate"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/login_img_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_password_visible"
+            android:layout_alignRight="@id/login_img_separate2"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/login_img_forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_forgetpassword"
+        android:layout_below="@id/login_rl_password"
+        android:layout_alignRight="@id/login_rl_password"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/btn_login"
+        android:layout_below="@id/login_img_forgetpassword"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/login_img_thirdseparate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_separate_third"
+        android:layout_below="@id/login_btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/login_rl_thirdlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/login_img_thirdseparate"
+        android:layout_alignRight="@id/login_btn_login"
+        android:layout_alignLeft="@id/login_btn_login"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/login_tecent_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/tecent_third"/>
+
+        <ImageView
+            android:id="@+id/login_wechat_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/wechat_third"/>
+    </LinearLayout>
+
+</RelativeLayout>
